@@ -1,6 +1,7 @@
+
 # Project Profitability Assessor
 
-![Version](https://img.shields.io/badge/version-1.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.1-blue.svg)
 ![Framework](https://img.shields.io/badge/Framework-BPPAF%20v1.0-red.svg)
 ![React](https://img.shields.io/badge/React-19.1-blue.svg?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.2-blue.svg?logo=typescript)
@@ -36,16 +37,16 @@ Watch a walkthrough of the application's core features.
 
 - **Centralized Dashboard:** Create, load, delete, import, and export projects from a single, intuitive interface.
 - **Guided 7-Phase Workflow:** A structured and repeatable process ensures all critical aspects of project assessment are covered.
-- **Real-time Financial Metrics:** Instantly see the impact of your decisions on Total Cost, Profit, and Margin, which are calculated and displayed in real-time.
+- **Scenario Modeling:** Create, compare, and manage multiple "what-if" scenarios within a single project. Instantly see the financial impact of swapping team members or changing timelines by switching between scenarios with a single click.
+- **Real-time Financial Metrics:** Instantly see the impact of your decisions on Total Cost, Profit, and Margin, which are calculated and displayed in real-time for the active scenario.
 - **Dynamic Resource Planning:** A flexible resource grid allows for easy allocation of different consultant types and calculation of total effort.
 - **Data-Driven Cost Analysis:** Automated breakdown of Direct Labor Costs vs. Fixed Costs, visualized with an interactive bar chart for clarity.
 - **Intelligent Pricing Strategy:** Enter a target sales price to see profitability metrics and receive system-generated recommendations for break-even, target, and optimal pricing.
 - **Margin Health Assessment:** Get instant visual feedback on the health of your project's margin, categorized from "Critical" to "Excellent."
 - **Automated Risk Assessment:** The system automatically identifies potential financial and resourcing risks (e.g., thin margins, unbalanced team seniority) based on your inputs.
-- **Scenario Optimization Stubs:** A dedicated phase for exploring alternative project scenarios to optimize outcomes.
 - **Decision & Documentation:** Formally capture go/no-go decisions and rationale, and generate pre-filled `.txt` document templates for project approval or rejection.
-- **Data Persistence:** All project data is automatically saved to the browser's `localStorage`, so your work is never lost.
-- **Import/Export:** Easily export project data to a `.json` file for backup or sharing, and import projects to continue your work.
+- **Data Persistence:** All project data, including all scenarios, is automatically saved to the browser's `localStorage`.
+- **Import/Export:** Easily export entire projects with all their scenarios to a `.json` file for backup or sharing, with backward compatibility for importing older, single-scenario files.
 
 ---
 
@@ -75,7 +76,7 @@ The application is built upon the **Btinkeeng Project Profitability Assessment F
 
 ### Phase 6: Scenario Optimization
 - **Objective:** Test alternatives and find the optimal approach.
-- **Activities:** This phase presents potential alternative scenarios—such as a cost-optimized vs. a quality-focused team mix—to encourage strategic thinking about project trade-offs.
+- **Activities:** This phase is now powered by the interactive Scenario Modeling feature. Users are prompted to use the 'Scenarios' dropdown in the header to duplicate their baseline plan and create alternatives (e.g., "Cost-Optimized Mix," "Accelerated Timeline") to directly compare the financial outcomes of different strategic choices.
 
 ### Phase 7: Decision & Documentation
 - **Objective:** Make a go/no-go decision and document the rationale.
